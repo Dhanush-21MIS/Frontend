@@ -19,7 +19,7 @@ const MovieDetails = () => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`https://backend-zeta-five-56.vercel.app/movie/${id}`);
+        const response = await axios.get(`https://backend-6i6g.vercel.app/movie/${id}`);
         setMovie(response.data);
       } catch (err) {
         console.error('Error fetching movie details:', err);
@@ -53,7 +53,7 @@ const MovieDetails = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        `https://backend-zeta-five-56.vercel.app/reviews/${id}`,
+        `https://backend-6i6g.vercel.app/reviews/${id}`,
         {
           rating,
           reviewText,
