@@ -10,7 +10,7 @@ const Reviews = ({ movieId }) => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get(`https://backend-zeta-five-56.vercel.app/reviews/${movieId}`);
+        const response = await axios.get(`https://backend-6i6g.vercel.app/reviews/${movieId}`);
         setReviews(response.data);
       } catch (err) {
         console.error('Failed to fetch reviews', err);
