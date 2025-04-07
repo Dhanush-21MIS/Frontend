@@ -57,7 +57,7 @@ const App = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://backend-zeta-five-56.vercel.app/data');
+      const response = await axios.get('https://backend-6i6g.vercel.app/data');
       setMovies(response.data);
       setFilteredMovies(response.data);
     } catch (error) {
