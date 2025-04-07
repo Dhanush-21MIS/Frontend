@@ -17,7 +17,7 @@ const AccountPage = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('https://backend-zeta-five-56.vercel.app/user', {
+        const response = await axios.get('https://backend-6i6g.vercel.app/user', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -36,7 +36,7 @@ const AccountPage = () => {
       setUploading(true);
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        'https://backend-zeta-five-56.vercel.app/user/profile-picture',
+        'https://backend-6i6g.vercel.app/user/profile-picture',
         { profilePicture: image },
         {
           headers: {
