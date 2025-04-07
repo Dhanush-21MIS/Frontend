@@ -16,7 +16,7 @@ const Signin = ({ setLoggedIn }) => {
     if (isSignUp) {
       // Sign Up
       try {
-        const response = await axios.post('https://backend-zeta-five-56.vercel.app/signup', {
+        const response = await axios.post('https://backend-6i6g.vercel.app/signup', {
           username,
           email,
           password,
@@ -31,7 +31,7 @@ const Signin = ({ setLoggedIn }) => {
     } else {
       // Sign In
       try {
-        const response = await axios.post('https://backend-zeta-five-56.vercel.app/login', {
+        const response = await axios.post('https://backend-6i6g.vercel.app/login', {
           email,
           password,
         });
