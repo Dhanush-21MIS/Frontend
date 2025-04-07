@@ -12,7 +12,7 @@ const MovieList = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get('https://backend-zeta-five-56.vercel.app/data'); // Replace with your backend URL
+        const response = await axios.get('https://backend-6i6g.vercel.app/data'); // Replace with your backend URL
         setMovies(response.data);
         setFilteredMovies(response.data); // Initialize with all movies
       } catch (error) {
